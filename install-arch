@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "`id -u`" -ne 0 ]
+then
+  echo -e "\n\nRun this script as root!\n\n"
+  exit -1
+fi
+
+echo -e "\n\nYou are super user!\n\n"
