@@ -21,5 +21,5 @@ sudo pacman -S lxdappearance-gtk3 gnome-themes-standard arc-gtk-theme
 pacman -S enchant mythes-en ttf-liberation hunspell-en_US ttf-bitstream-vera pkgstats adobe-source-sans-pro-fonts gst-plugins-good ttf-droid ttf-dejavu aspell-en icedtea-web gst-libav ttf-ubuntu-font-family ttf-anonymous-pro jre8-openjdk ttf-gentium languagetool libmythes ttf-font-awesome git firefox vlc
 
 # Setup config files
-cd ~
 git clone https://github.com/manir1811/dotfiles.git
+mv ./dotfiles/.* ../
