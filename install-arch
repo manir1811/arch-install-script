@@ -7,3 +7,19 @@ then
 fi
 
 echo -e "\n\nYou are super user!\n\n"
+
+# Install Display server and apps
+sudo pacman -S xorg xorg-server xorg-xinit mesa xorg-apps
+
+# Install i3wm
+sudo pacman -S i3 i3lock i3blocks dmenu terminator tmux arandr feh nemo network-manager-applet yaourt j4-dmenu-desktop twmn-git light
+
+# Install themes
+sudo pacman -S lxdappearance-gtk3 gnome-themes-standard arc-gtk-theme
+
+# Install spell-check, fonts, plugins and java
+pacman -S enchant mythes-en ttf-liberation hunspell-en_US ttf-bitstream-vera pkgstats adobe-source-sans-pro-fonts gst-plugins-good ttf-droid ttf-dejavu aspell-en icedtea-web gst-libav ttf-ubuntu-font-family ttf-anonymous-pro jre8-openjdk ttf-gentium languagetool libmythes ttf-font-awesome git firefox vlc
+
+# Setup config files
+cd ~
+git clone https://github.com/manir1811/dotfiles.git
